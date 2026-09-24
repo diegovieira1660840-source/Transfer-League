@@ -1,0 +1,107 @@
+.card{
+    display: flex;
+    gap: 20px;
+}
+
+.banner {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+nav ul{
+  display: flex;
+  gap: 20px;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 380px;
+
+}
+
+.logo h1 {
+  font-size: 3rem;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+}
+body{
+  background-color:lemonchiffon;
+}
+
+
+  .cards{
+    display: flex;
+    gap: 150px;
+    
+  }
+  .card {
+  width: 220px;
+}
+
+.card {
+  width: 220px;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.card p {
+  margin: 1px 0;
+}
+.rumor {
+  width: 200px;
+}
+.rumores {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 20px;
+}
+.barra {
+  width: 100%;
+  height: 8px;
+  background-color: #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.barra span {
+  display: block;
+  height: 100%;
+  background-color: #2ecc71;
+}
+
+/* Responsividade e Variações de Layout (Media Queries, Flexbox e Grid) */
+
+/* Versão Desktop: Garante Flexbox e Grid em 2 ou mais colunas */
+.conteudo-principal, 
+.transferencias-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.cards-grid,
+.tabela-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Versão Mobile: Ajusta para 1 coluna em telas menores que 768px */
+@media (max-width: 768px) {
+  .conteudo-principal, 
+  .transferencias-container {
+    flex-direction: column !important;
+  }
+
+  .cards-grid,
+  .tabela-container {
+    grid-template-columns: 1fr !important;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
